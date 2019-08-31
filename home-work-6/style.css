@@ -1,0 +1,17 @@
+.form-of-registration {
+    width: 500px;
+}
+.comment-for-registration-form {
+   margin-left: 16px;
+}
+.required-field {
+    background: lightgreen;
+    color: black;
+}
+.non-required-field {
+    background: lightgrey;
+    color: black;
+}
+.personal-data {
+    border: 3px solid #73AD21;
+}

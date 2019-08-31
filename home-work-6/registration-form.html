@@ -10,45 +10,76 @@
   <!--[if lt IE 9]>
   <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
   <![endif]-->
-
+  <link type="text/css" rel="stylesheet" href="style.css"/>
 </head>
 <body>
-<h2>Регистрация нового пользователя</h2>
+<h2>Registration of new user</h2>
 <div class="form-of-registration">
-  <form method="POST" action="http://fe.it-academy.by/TestForm.php" autocomplete="off">
+  <form method="POST"
+        action="http://fe.it-academy.by/TestForm.php"
+        autocomplete="off">
     <input type="radio"
            name="rent-or-get"
            id="rent-app"
            value="1"
-           checked="checked"/><label for="rent-app">Я хочу сдать квартиру</label>
+           checked="checked"/><label for="rent-app">I want to rent an appartment</label>
     <input type="radio"
            name="rent-or-get"
            id="get-app"
-           value="2"/><label for="get-app">Я хочу снять квартиру</label>
+           value="2"/><label for="get-app">I want to get an appartment</label>
     <br/><br/>
-    <fieldset>
-      <legend>Персональный данные:</legend>
-      Ваше имя:<br/><input type="text"
-                      name="username"
-                      maxlength="30"
-                      title="Введите имя, максимум 30 символов"
-                      size="30"
-                      autofocus/>
+    <fieldset class="personal-data">
+      <legend>Personal data:</legend>
+      Name*:<br/><input type="text"
+                        class="required-field"
+                        name="username"
+                        maxlength="12"
+                        title="Input your name, please max 12 english letter"
+                        pattern="[a-zA-Z]{,12}"
+                        size="30"
+                        required
+                        autofocus/>
       <br/>
-      Пароль:<br/><input type="password"
-                    name="password"
-                    title="Введите пароль от 4-х до 10-и символов"
-                    size="30"
-                    minlength="4"
-                    maxlength="10"/>
+      Password*:<br/><input type="password"
+                            class="required-field"
+                            name="password"
+                            title="Enter your password"
+                            size="30"
+                            required
+                            minlength="4"
+                            maxlength="10"/>
       <br/>
-      E-mail адрес:<br/><input/>
+      E-mail*:<br/><input type="email"
+                          class="required-field"
+                          title="Input e-mail"
+                          size="30"
+                          name="email"
+                          required
+                          autocomplete="on"/>
       <br/>
-      Телефон:<br/><input/>
+      Phone number:<br/><input type="phone"
+                               class="non-required-field"
+                               title="Input phone number, format +375 29 1234567"
+                               size="30"
+                               name="phone"
+                               placeholder="+375 29 1234567"
+                               pattern="\+[0-9]{3} [0-9]{2} [0-9]{7}"/>
       <br/>
+      * Required field
 
     </fieldset>
-
+    <br/>
+    <div class="comment-for-registration-form">
+    Comment:<br/>
+    <textarea name="comment"
+              class="non-required-field"
+              cols="45"
+              rows="4"
+              aria-required="true"></textarea>
+    <br/><br/>
+    <input type="submit" value="Submit" formtarget="_blank"/>
+    <input type="reset" value="Reset form"/>
+    </div>
 
   </form>
 </div>
