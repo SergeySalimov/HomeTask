@@ -43,11 +43,13 @@
       Password*:<br/><input type="password"
                             class="required-field"
                             name="password"
-                            title="Enter your password"
+                            title="Enter your password, please 7 digit or/and english letter"
                             size="30"
                             required
-                            minlength="4"
-                            maxlength="10"/>
+                            pattern="[A-z0-9]{7}"
+                            placeholder="7 digit or/and english letter"
+                            minlength="7"
+                            maxlength="7"/>
       <br/>
       E-mail*:<br/><input type="email"
                           class="required-field"
