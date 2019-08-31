@@ -14,34 +14,43 @@
 </head>
 <body>
 <h2>Регистрация нового пользователя</h2>
-<form method="POST" action="http://fe.it-academy.by/TestForm.php" autocomplete="off">
-  <input type="radio"
-         name="rent-or-get"
-         id="rent-app"
-         value="1"
-         checked="checked"/><label for="rent-app">Я хочу сдать квартиру</label>
-  <input type="radio"
-         name="rent-or-get"
-         id="get-app"
-         value="2"/><label for="get-app">Я хочу снять квартиру</label>
-  <br/><br/>
-  <fieldset>
-    <legend>Персональный данные:</legend>
-    Ваше имя:<input type="text"
-                    name="username"
-                    maxlength="30"
-                    size="15"
-                    autofocus/>
-    <br/>
-    Пароль:<input type="password"
-                  name="password"
-                  title="Введите пароль от 4-х до 10-и символов"
-                  minlength="4"
-                  maxlength="10"/>
+<div class="form-of-registration">
+  <form method="POST" action="http://fe.it-academy.by/TestForm.php" autocomplete="off">
+    <input type="radio"
+           name="rent-or-get"
+           id="rent-app"
+           value="1"
+           checked="checked"/><label for="rent-app">Я хочу сдать квартиру</label>
+    <input type="radio"
+           name="rent-or-get"
+           id="get-app"
+           value="2"/><label for="get-app">Я хочу снять квартиру</label>
+    <br/><br/>
+    <fieldset>
+      <legend>Персональный данные:</legend>
+      Ваше имя:<br/><input type="text"
+                      name="username"
+                      maxlength="30"
+                      title="Введите имя, максимум 30 символов"
+                      size="20"
+                      autofocus/>
+      <br/>
+      Пароль:<br/><input type="password"
+                    name="password"
+                    title="Введите пароль от 4-х до 10-и символов"
+                    size="20"
+                    minlength="4"
+                    maxlength="10"/>
+      <br/>
+      E-mail адрес:<br/><input/>
+      <br/>
+      Телефон:<br/><input/>
+      <br/>
 
-  </fieldset>
+    </fieldset>
 
 
-</form>
+  </form>
+</div>
 </body>
 </html>
