@@ -75,12 +75,48 @@
       <br/>
     </div>
     <div class="data-block">
-    <fieldset class="for-data">
-      <legend>Additional data:</legend>
-      Have you?<br/>
-      <input type="checkbox" name=""/>
+      <fieldset class="for-data">
+        <legend>Additional data:</legend>
+        Do you live with your family?<br/>
+        <input type="radio"
+               name="family-with"
+               value="1"
+               id="family-yes"/><label for="family-yes">Yes&nbsp;</label>
+        <input type="radio"
+               name="family-with"
+               value="0"
+               id="family-no"/><label for="family-no">No</label>
+        &nbsp;&nbsp;&nbsp;How many children are living with you?
+        <select name="num-of-children" size="1">
+          <option value="0" hidden></option>
+          <option value="1">1 child</option>
+          <option value="2">2 children</option>
+          <option value="3">3 children</option>
+          <option value="4 and more">4 and more</option>
+        </select>
+        <br/>
+        <hr/>
+        Do you smoke?<br/>
+        <input type="radio" name="smoking" value="1" id="smoking-yes"/><label for="smoking-yes">Yes&nbsp;</label>
+        <input type="radio" name="smoking" value="0" id="smoking-no"/><label for="smoking-no">No</label>
+        <br/>
+        <hr/>
+        Do you have pets?<br/>
+        <input type="checkbox"
+               name="pet-dog"
+               id="pet-dog"
+               value="1"/><label for="pet-dog">Dog</label>
+        <input type="checkbox"
+               name="pet-cat"
+               id="pet-cat"
+               value="1"/><label for="pet-cat">&nbsp;Cat</label>
+        <input type="checkbox"
+               name="pet-other"
+               id="pet-other"
+               value="1"/><label for="pet-other">&nbsp;Other</label>
+        <br/>
 
-    </fieldset>
+      </fieldset>
     </div>
     <br/>
 
