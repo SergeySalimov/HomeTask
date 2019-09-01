@@ -18,6 +18,7 @@
   <form method="POST"
         action="http://fe.it-academy.by/TestForm.php"
         autocomplete="off">
+
     <input type="radio"
            name="rent-or-get"
            id="rent-app"
@@ -28,59 +29,71 @@
            id="get-app"
            value="2"/><label for="get-app">I want to get an appartment</label>
     <br/><br/>
-    <fieldset class="personal-data">
-      <legend>Personal data:</legend>
-      Name*:<br/><input type="text"
-                        class="required-field"
-                        name="username"
-                        maxlength="12"
-                        title="Input your name, please max 12 english letter"
-                        pattern="[a-zA-Z]{,12}"
-                        size="30"
-                        required
-                        autofocus/>
-      <br/>
-      Password*:<br/><input type="password"
-                            class="required-field"
-                            name="password"
-                            title="Enter your password, please 7 digit or/and english letter"
-                            size="30"
-                            required
-                            pattern="[A-z0-9]{7}"
-                            placeholder="7 digit or/and english letter"
-                            minlength="7"
-                            maxlength="7"/>
-      <br/>
-      E-mail*:<br/><input type="email"
+    <div class="data-block">
+      <fieldset class="for-data">
+        <legend>Personal data:</legend>
+        Name*:<br/><input type="text"
                           class="required-field"
-                          title="Input e-mail"
+                          name="username"
+                          maxlength="12"
+                          title="Input your name, please max 12 english letter"
+                          pattern="[a-zA-Z]{,12}"
                           size="30"
-                          name="email"
                           required
-                          autocomplete="on"/>
+                          autofocus/>
+        <br/>
+        Password*:<br/><input type="password"
+                              class="required-field"
+                              name="password"
+                              title="Enter your password, please 7 digit or/and English letter"
+                              size="30"
+                              required
+                              pattern="[A-z0-9]{7}"
+                              placeholder="7 digit or/and English letter"
+                              minlength="7"
+                              maxlength="7"/>
+        <br/>
+        E-mail*:<br/><input type="email"
+                            class="required-field"
+                            title="Input e-mail"
+                            size="30"
+                            name="email"
+                            required
+                            autocomplete="on"/>
+        <br/>
+        Phone number:<br/><input type="phone"
+                                 class="non-required-field"
+                                 title="Input phone number, format +375 29 1234567"
+                                 size="30"
+                                 name="phone"
+                                 placeholder="+375 29 1234567"
+                                 pattern="\+[0-9]{3} [0-9]{2} [0-9]{7}"/>
+        <br/>
+        * Required field
+
+      </fieldset>
       <br/>
-      Phone number:<br/><input type="phone"
-                               class="non-required-field"
-                               title="Input phone number, format +375 29 1234567"
-                               size="30"
-                               name="phone"
-                               placeholder="+375 29 1234567"
-                               pattern="\+[0-9]{3} [0-9]{2} [0-9]{7}"/>
-      <br/>
-      * Required field
+    </div>
+    <div class="data-block">
+    <fieldset class="for-data">
+      <legend>Additional data:</legend>
+      Have you?<br/>
+      <input type="checkbox" name=""/>
 
     </fieldset>
+    </div>
     <br/>
+
     <div class="comment-for-registration-form">
-    Comment:<br/>
-    <textarea name="comment"
-              class="non-required-field"
-              cols="45"
-              rows="4"
-              aria-required="true"></textarea>
-    <br/><br/>
-    <input type="submit" value="Submit" formtarget="_blank"/>
-    <input type="reset" value="Reset form"/>
+      Comment if needed:<br/>
+      <textarea name="comment"
+                class="non-required-field"
+                cols="45"
+                rows="4"
+                aria-required="true"></textarea>
+      <br/><br/>
+      <input type="submit" value="Submit" formtarget="_blank"/>
+      <input type="reset" value="Reset form"/>
     </div>
 
   </form>
