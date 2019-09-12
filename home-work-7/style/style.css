@@ -46,6 +46,8 @@ aside {
     right: 30px;
     top: 30px;
     /*float: right;*/
+    background-color: #ffffff;
+
 
     border: 1px solid #000;
     width: 400px;
@@ -56,19 +58,22 @@ aside > span {
     display: block;
     text-align: center;
     margin: 1rem 0; /* отступ сверху и снизу*/
+
 }
 .image-link {
     display: inline-block;
     width: 90px;
     height: 90px;
     background: url("../img/social.jpg") 0 0 no-repeat;
+
     margin: 8px 8px; /* отступ слева и справа*/
+
 
 }
 
 .image-link.facebook {
     background-position: -29px -28px;
-    bo
+
 }
 
 .image-link.skype {
