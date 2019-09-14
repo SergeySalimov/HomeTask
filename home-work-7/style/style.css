@@ -9,21 +9,43 @@
 
 }
 
+@media (max-width: 900px) {
+    aside {
+        display: none;
+    }
+}
+
+@media (max-width: 900px) {
+    #article-muza-gr {
+        margin-right: 30px;
+    }
+}
+
+.clearfix::after {
+    content: ' ';
+    display: block;
+    clear: both;
+}
+
+
 body {
     font: 18px "Times New Roman", Serif;
     background: url("../img/gravel.png");
 }
 
+.article-muza-graf {
+    margin-right: 430px;
+}
 
 .text-of-header {
     position: relative; /* Фиксированное позиционирование */
     top: 0; /* Положение сверху */
     left: 0; right: 0; /*по ширине экрана*/
-    padding: 0 4rem; /* Поля вокруг текста */
-    /*padding-left: 70px;*/
-    text-align: center;
+    /*padding: 0 4rem; !* Поля вокруг текста *!*/
+    padding-left: 70px;
+    text-align: left;
     margin: 0; /* Убираем отступы */
-    font: normal 1.8rem Lobster, Serif;
+    font: normal 2.5rem Lobster, Serif;
     border-bottom: 1px solid #000000;
 
 }
@@ -32,7 +54,7 @@ body {
     position: relative;
     top: 0.3rem;
 
-    font: normal 14px Philosopher, Serif;
+    font: normal 1.4rem Philosopher, Serif;
 
     /*margin-left: 10px;*/
     text-align: justify;
@@ -45,6 +67,7 @@ aside {
     position: fixed;
     right: 30px;
     top: 30px;
+    overflow: hidden;
     /*float: right;*/
     background-color: #ffffff;
 
@@ -52,14 +75,25 @@ aside {
     border: 1px solid #000;
     width: 400px;
     height: 300px;
+    transition: 0.3s;
+    transition-timing-function: ease-in;
 }
-aside > span {
 
+aside:hover {
+    height: 400px;
+}
+
+aside > span {
+    font: 1.2rem "Times New Roman", Serif;
     display: block;
     text-align: center;
     margin: 1rem 0; /* отступ сверху и снизу*/
-
 }
+
+aside > pre  {
+    font: 1rem "Times New Roman", Serif;
+}
+
 .image-link {
     display: inline-block;
     width: 90px;
