@@ -21,13 +21,6 @@
     }
 }
 
-.clearfix::after {
-    content: ' ';
-    display: block;
-    clear: both;
-}
-
-
 body {
     font: 18px "Times New Roman", Serif;
     background: url("../img/gravel.png");
