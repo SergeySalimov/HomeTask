@@ -13,13 +13,11 @@
     aside {
         display: none;
     }
-}
-
-@media (max-width: 900px) {
     #article-muza-gr {
         margin-right: 30px;
     }
 }
+
 
 body {
     font: 18px "Times New Roman", Serif;
