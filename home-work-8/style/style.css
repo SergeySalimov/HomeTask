@@ -1,5 +1,26 @@
-article, header, footer, aside {
+header, footer {
     border: solid 1px black;
+}
+
+aside, article {
+    min-width: 200px;
+    overflow: hidden;
+}
+
+@media (max-width: 700px) {
+    footer, header {
+        display: none;
+    }
+    #article-media {
+        margin-left: 0;
+        border: none;
+        height: auto;
+    }
+    #aside-media {
+        height: auto;
+        float: none;
+        width: 100%;
+    }
 }
 
 .container {
@@ -28,27 +49,17 @@ aside {
     width: 200px;
     height: 600px;
     background: #fff67b;
-    padding: 0px 10px;
+    padding: 0 10px;
 }
 
 article {
     margin-left: 221px;
-    padding: 0px 10px;
+    padding: 0 10px;
     height: 600px;
-    min-width: 200px;
-    overflow: hidden;
-    background: url("../img/ball.png") 0 0 repeat;
+    border: 1px solid transparent;
+    border-image: url(../img/ball.png) 100%/100px round;
+
 }
-
-/*.ball {*/
-    /*position: relative;*/
-    /*top: 0;*/
-    /*right: 0;*/
-    /*width: 49px;*/
-    /*height: 600px;*/
-
-    /*background: url("../img/ball.png") 0 0 repeat;*/
-/*}*/
 
 article > h3 {
     text-align: center;
