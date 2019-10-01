@@ -60,7 +60,6 @@ article {
     border-image-source: url("../img/border-ball.png");
     border-image-slice: 49;
     border-image-repeat: round;
-
 }
 
 article > h3 {
