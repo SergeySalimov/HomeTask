@@ -7,21 +7,36 @@ header, footer {
 }
 
 .flex-container {
+    display: flex;
+    flex-wrap: wrap;
+}
 
+@media (max-width: 900px) {
+    #aside-media {
+        flex-basis: 25%;
+    }
+    #article-media {
+        flex-basis: 75%;
+    }
 }
 
 @media (max-width: 700px) {
     footer, header {
         display: none;
     }
+
+    .flex-container {
+       flex-direction: column;
+    }
+
     #article-media {
+        order: 1;
         margin-left: 0;
         border: none;
-        height: auto;
     }
+
     #aside-media {
-        height: auto;
-        float: none;
+        order: 2;
         width: 100%;
     }
 }
@@ -48,19 +63,20 @@ header, footer {
 }
 
 aside {
-    flex-basis: 200px;
+    flex-basis: 20%;
+
     background: #fff67b;
     padding: 0 10px;
     width: 200px;
 }
 
 article {
+    flex-basis: 80%;
     padding-left: 10px;
     border-right: 49px solid transparent;
     border-image-source: url("../img/border-ball.png");
     border-image-slice: 49;
     border-image-repeat: round;
-
 }
 
 article > h3 {
@@ -72,5 +88,11 @@ article > h3 {
 article > img {
     padding: 0 15px 5px 0;
     float: left;
+}
+
+.clearfix:after {
+    content: ' ';
+    clear: both;
+    display: block;
 }
 
