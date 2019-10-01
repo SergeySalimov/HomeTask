@@ -54,10 +54,12 @@ aside {
 
 article {
     margin-left: 221px;
-    padding: 0 10px;
+    padding-left: 10px;
     height: 600px;
-    border: 1px solid transparent;
-    border-image: url(../img/ball.png) 100%/100px round;
+    border-right: 49px solid transparent;
+    border-image-source: url("../img/border-ball.png");
+    border-image-slice: 49;
+    border-image-repeat: round;
 
 }
 
