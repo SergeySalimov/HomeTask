@@ -15,6 +15,7 @@ header, footer {
     #aside-media {
         flex-basis: 25%;
     }
+
     #article-media {
         flex-basis: 75%;
     }
@@ -26,7 +27,7 @@ header, footer {
     }
 
     .flex-container {
-       flex-direction: column;
+        flex-direction: column;
     }
 
     #article-media {
