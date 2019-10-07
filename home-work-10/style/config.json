@@ -1,0 +1,70 @@
+{
+  "name": "",
+  "css_prefix_text": "icon-",
+  "css_use_suffix": false,
+  "hinting": true,
+  "units_per_em": 1000,
+  "ascent": 850,
+  "glyphs": [
+    {
+      "uid": "dc4eb27cd8f0cd537206d00dd85c0286",
+      "css": "baseball",
+      "code": 59398,
+      "src": "maki"
+    },
+    {
+      "uid": "9f5ce0d9f586e3df00449ad6ed6b0bf3",
+      "css": "basketball",
+      "code": 59399,
+      "src": "maki"
+    },
+    {
+      "uid": "aab7e7622e6ee1ed8166fb73f20e8c9a",
+      "css": "bicycle",
+      "code": 59402,
+      "src": "maki"
+    },
+    {
+      "uid": "3dfa88388f5e84f8e8fdc4f6320c8b44",
+      "css": "cricket",
+      "code": 59411,
+      "src": "maki"
+    },
+    {
+      "uid": "5040789d726273a910ac5b59e9d8227a",
+      "css": "pitch",
+      "code": 59434,
+      "src": "maki"
+    },
+    {
+      "uid": "8a4eb4f98d8e0f3686a741c952b03c08",
+      "css": "tennis",
+      "code": 59449,
+      "src": "maki"
+    },
+    {
+      "uid": "d368c9b110be1daa21f992afca084b8c",
+      "css": "swimming",
+      "code": 59448,
+      "src": "maki"
+    },
+    {
+      "uid": "ebabd8ff4b67bdbba7660952c30813ca",
+      "css": "skiing",
+      "code": 59446,
+      "src": "maki"
+    },
+    {
+      "uid": "d8813acae9d35ada76fda399a6000587",
+      "css": "soccer",
+      "code": 59447,
+      "src": "maki"
+    },
+    {
+      "uid": "429c0a4a7c5aba2f8a894f98b48529b3",
+      "css": "football",
+      "code": 59416,
+      "src": "maki"
+    }
+  ]
+}
