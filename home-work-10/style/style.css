@@ -41,6 +41,10 @@ body {
     color: black;
 }
 
+.list-of-spotrs li a:before {
+    color: #3524ff;
+}
+
 .first-a {
     border-top: 1px solid;
 }
