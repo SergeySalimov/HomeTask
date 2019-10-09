@@ -41,9 +41,11 @@ body {
     color: black;
 }
 
+.first-a {
+    border-top: 1px solid;
+}
 
-
-/*хотел добраться до первой ссылки <a> элемента <li> в списке <ul> с классом .list-of-spotrs*/
+/*хотел добраться до первой ссылки <a> элемента <li> в списке <ul> с классом .list-of-spotrs в итого зачитил см.выше*/
 /*.list-of-spotrs li a:nth-of-type(1) {*/
 /*border-top: 1px solid;*/
 /*}*/
