@@ -1,9 +1,74 @@
-header > h2, footer > h2 {
-    text-transform: uppercase;
+* {
+    box-sizing: border-box;
+    font-size: 0.85rem;
+}
+
+body {
+    font-family: "Times New Roman", Serif;
+    background-color: #e3e3e3;
+}
+
+.header-zone, .footer-zone {
+    font-size: 1.2rem;
+    background-color: lightblue;
+    border: 1px solid black;
+    padding: 10px 20px;
+    color: blue;
     text-align: center;
 }
 
-#flex-container {
-    display: flex;
+.nav-bar {
+    padding: 15px 5px;
+    background-color: lightgoldenrodyellow;
 }
 
+.nav-bar h4 {
+    text-align: center;
+    font-size: 1.2rem;
+}
+
+.list-of-spotrs {
+    list-style: none;
+    padding: 0;
+}
+
+.list-of-spotrs li a {
+    display: block;
+    padding: 5px 10px;
+    text-decoration-line: none;
+    text-transform: capitalize;
+    border-bottom: 1px solid;
+    color: black;
+}
+
+
+
+/*хотел добраться до первой ссылки <a> элемента <li> в списке <ul> с классом .list-of-spotrs*/
+/*.list-of-spotrs li a:nth-of-type(1) {*/
+/*border-top: 1px solid;*/
+/*}*/
+
+.list-of-spotrs li a:hover {
+    background-color: gold;
+}
+
+.article-text {
+    background-color: white;
+}
+
+.article-text img {
+    float: left;
+    padding-right: 10px;
+    padding-bottom: 5px;
+}
+
+.article-text h3 {
+    padding-top: 10px;
+    text-align: center;
+}
+
+.clearfix:after {
+    content: '';
+    clear: both;
+    display: block;
+}
