@@ -1,9 +1,0 @@
-@mixin headerFooter ($elHeight){
-  height: $elHeight;
-  display: flex;
-  border: 1px solid #333;
-  background: #fff;
-  border-radius: 5px;
-  padding: 10px;
-  justify-content: space-between;
-}
