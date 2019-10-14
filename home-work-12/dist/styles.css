@@ -7096,3 +7096,8 @@ header {
   padding: 0 43px;
   height: 40px;
   font-size: 13px; }
+
+footer {
+  background-color: #162533; }
+  footer ul li a {
+    color: #fff; }

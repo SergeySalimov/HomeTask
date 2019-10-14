@@ -95,13 +95,13 @@ header {
 }
 
 #fourth {
-   p {
+  p {
     font-size: 12px;
     color: $sectionGrey;
   }
   form {
     ::placeholder {
-    font-size: $formFontSize;
+      font-size: $formFontSize;
     }
     .form-check {
       margin-top: 12px;
@@ -119,6 +119,18 @@ header {
       font-size: 13px;
     }
   }
+}
+
+footer {
+  background-color: #162533;
+  ul {
+    li {
+      a {
+        color: $mainFontColor;
+      }
+    }
+  }
+
 }
 
 
