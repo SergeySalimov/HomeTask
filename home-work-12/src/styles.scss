@@ -1,0 +1,124 @@
+$linkFontSize: 17px;
+$formFontSize: 11px;
+$bigPadMd: 70px;
+$bigPadSm: 20px;
+$mainFontColor: #fff;
+$sectionGrey: #c6c8ca;
+$basePadding: 15px;
+$success: #22ffb9;
+@import "../node_modules/bootstrap/scss/bootstrap";
+
+.top-big-pad {
+  padding-top: $bigPadSm;
+  @media (min-width: map-get($grid-breakpoints, "md")) {
+    padding-top: $bigPadMd;
+  }
+}
+
+header {
+  background: url('../images/header-bg.jpg');
+  background-size: cover;
+  padding: $basePadding 0;
+  color: $mainFontColor;
+  a {
+    color: $mainFontColor;
+    font-size: $linkFontSize;
+    &:hover {
+      color: #333;
+    }
+  }
+
+  h1 {
+    text-transform: uppercase;
+  }
+
+  p {
+    margin-bottom: 35px;
+    line-height: 2rem;
+  }
+  @media (min-width: map-get($grid-breakpoints, "md")) {
+    padding-top: 35px;
+
+    .btn-sign {
+      padding: 0px 16px;
+      height: 26px;
+      margin-top: 10px;
+    }
+
+    h1 {
+      font-weight: bold;
+      font-size: 3.5rem;
+    }
+  }
+
+}
+
+#second {
+  padding-bottom: $basePadding;
+  h4 {
+    color: $sectionGrey;
+    font-weight: bold;
+  }
+
+  p {
+    max-width: 400px;
+    margin: 0 auto;
+    color: $sectionGrey;
+  }
+
+  .item {
+    i {
+      font-size: 53px;
+
+      &.first-icon {
+        color: #de65f6;
+      }
+
+      &.second-icon {
+        color: #f6916f;
+      }
+
+      &.third-icon {
+        color: #5cf63c;
+      }
+    }
+  }
+
+  h5 {
+    margin-top: 30px;
+  }
+
+  .btn-success {
+    color: $mainFontColor;
+    font-weight: bold;
+  }
+}
+
+#fourth {
+   p {
+    font-size: 12px;
+    color: $sectionGrey;
+  }
+  form {
+    ::placeholder {
+    font-size: $formFontSize;
+    }
+    .form-check {
+      margin-top: 12px;
+    }
+    .form-check label {
+      font-size: $formFontSize;
+      display: block;
+      padding-top: 3px;
+    }
+    .btn-success {
+      text-transform: uppercase;
+      color: $mainFontColor;
+      padding: 0 43px;
+      height: 40px;
+      font-size: 13px;
+    }
+  }
+}
+
+
