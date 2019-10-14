@@ -7075,6 +7075,10 @@ header {
     color: #fff;
     font-weight: bold; }
 
+@media (min-width: 768px) {
+  #fourth {
+    margin-bottom: 30px; } }
+
 #fourth p {
   font-size: 12px;
   color: #c6c8ca; }
@@ -7099,5 +7103,13 @@ header {
 
 footer {
   background-color: #162533; }
+  @media (min-width: 768px) {
+    footer {
+      padding-bottom: 30px; } }
   footer ul li a {
     color: #fff; }
+  footer .nav-thin-font a {
+    color: #fff;
+    text-transform: capitalize;
+    font-weight: 100;
+    font-size: 14px; }
