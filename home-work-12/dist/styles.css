@@ -7092,7 +7092,7 @@ header {
 #fourth form .form-check label {
   font-size: 11px;
   display: block;
-  padding-top: 3px; }
+  padding-top: 2px; }
 
 #fourth form .btn-success {
   text-transform: uppercase;
@@ -7107,12 +7107,14 @@ footer {
     footer {
       padding-bottom: 30px; } }
   footer ul li a {
-    color: #fff; }
+    color: #fff;
+    font-size: 14px;
+    font-weight: 600; }
   footer .nav-thin-font a {
     color: #fff;
     text-transform: capitalize;
     font-weight: 100;
-    font-size: 14px; }
+    font-size: 12px; }
   footer .image-link {
     width: 40px;
     height: 40px;
