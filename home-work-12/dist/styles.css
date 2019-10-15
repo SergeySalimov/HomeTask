@@ -7113,3 +7113,21 @@ footer {
     text-transform: capitalize;
     font-weight: 100;
     font-size: 14px; }
+  footer .image-link {
+    width: 40px;
+    height: 40px;
+    background: url(../images/social-sprite.png) 0 0 no-repeat;
+    margin: 8px 8px;
+    opacity: 0.3; }
+    footer .image-link.first-image {
+      background-position: -879px -913px; }
+    footer .image-link.facebook {
+      background-position: -1151px -1186px; }
+    footer .image-link.twitter {
+      background-position: -881px -1275px; }
+    footer .image-link.in {
+      background-position: -972px -1275px; }
+    footer .image-link.globus {
+      background-position: -1241px -1096px; }
+    footer .image-link.be {
+      background-position: -881px -1008px; }
