@@ -112,7 +112,7 @@ header {
     .form-check label {
       font-size: $formFontSize;
       display: block;
-      padding-top: 3px;
+      padding-top: 2px;
     }
     .btn-success {
       text-transform: uppercase;
@@ -128,12 +128,13 @@ footer {
   @media (min-width: map-get($grid-breakpoints, "md")) {
     padding-bottom: 30px;
   }
-
   background-color: #162533;
   ul {
     li {
       a {
         color: $mainFontColor;
+        font-size: 14px;
+        font-weight: 600;
       }
     }
   }
@@ -142,8 +143,34 @@ footer {
       color: $mainFontColor;
       text-transform: capitalize;
       font-weight: 100;
-      font-size: 14px;
+      font-size: 12px;
     }
+  }
+  .image-link {
+    width: 40px;
+    height: 40px;
+    background: url(../images/social-sprite.png) 0 0 no-repeat;
+    margin: 8px 8px;
+    opacity: 0.3;
+    &.first-image {
+      background-position: -879px -913px;
+    }
+    &.facebook {
+      background-position: -1151px -1186px;
+    }
+    &.twitter {
+      background-position: -881px -1275px;
+    }
+    &.in {
+      background-position: -972px -1275px;
+    }
+    &.globus {
+      background-position: -1241px -1096px;
+    }
+    &.be {
+      background-position: -881px -1008px;
+    }
+
   }
 }
 
