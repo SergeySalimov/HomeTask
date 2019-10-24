@@ -1,4 +1,4 @@
-let num = prompt('Input any positiv whole number:');
+let num = prompt('Input any positive whole number:');
 let numLenght = num.length;
 num = +num;
 console.log('Your number by digit is:');
