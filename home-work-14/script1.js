@@ -7,9 +7,8 @@ for (let i = 1; i <= factorialNumber; i++) {
 }
 console.log (`Factorial of number ${factorialNumber} = ${answerNumber}`);
 
-let numberForRange = +prompt('Input number for checking:');
-
 // Task 4
+let numberForRange = +prompt('Input number for checking:');
 if (isNumberInRange(numberForRange)) {
   console.log('This number in range');
 } else {
@@ -17,9 +16,7 @@ if (isNumberInRange(numberForRange)) {
 }
 
 function isNumberInRange (number) {
-  if (number > 0 && number < 10) {
-    return true
-  } else {return false}
+      return number > 0 && number < 10
 }
 
 // Task 5
