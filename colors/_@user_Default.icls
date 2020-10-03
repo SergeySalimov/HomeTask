@@ -1,0 +1,19 @@
+<scheme name="_@user_Default" version="142" parent_scheme="Default">
+  <metaInfo>
+    <property name="created">2020-10-03T12:47:27</property>
+    <property name="ide">WebStorm</property>
+    <property name="ideVersion">2018.2.2.0.0</property>
+    <property name="modified">2020-10-03T13:09:09</property>
+    <property name="originalScheme">Default</property>
+  </metaInfo>
+  <attributes>
+    <option name="LOG_VERBOSE_OUTPUT">
+      <value>
+        <option name="FOREGROUND" value="65ee69" />
+      </value>
+    </option>
+    <option name="TEXT">
+      <value />
+    </option>
+  </attributes>
+</scheme>
